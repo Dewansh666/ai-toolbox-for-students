@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | AI Toolbox</title>
+  <link rel="stylesheet" href="../../src/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Login Container -->
+  <section class="auth-section">
+    <div class="auth-box">
+      <h2>Welcome Back</h2>
+      <p class="subtitle">Log in to access your tools</p>
+
+      <form id="login-form">
+        <input type="email" id="login-email" placeholder="Email" required />
+        <input type="password" id="login-password" placeholder="Password" required />
+        <button type="submit" class="btn-primary full">Log In</button>
+      </form>
+
+      <p class="auth-switch">
+        Don’t have an account? <a href="signup.html">Sign up here</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Firebase Auth Logic -->
+  <script type="module" src="../../src/js/auth.js"></script>
+  <script type="module" src="../../src/js/firebase.js"></script>
+</body>
+</html>
